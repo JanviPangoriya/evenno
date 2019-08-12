@@ -13,6 +13,7 @@ public class Main {
         int i;
         for (i = 1; i <= 10; i++) {
             System.out.println(a + " X " + i + " = " + (a * i));
+            // a X i=z
     }
     }
 }
