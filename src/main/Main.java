@@ -4,9 +4,13 @@
  * */
 package main;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int a = 2, i = 0;
+        Scanner obj = new Scanner(System.in);
+        int a = obj.nextInt();
+        int i;
         for (i = 1; i <= 10; i++) {
             System.out.println(a + " X " + i + " = " + (a * i));
     }
