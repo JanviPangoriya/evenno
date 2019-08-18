@@ -11,8 +11,9 @@ public class Main {
         Scanner obj = new Scanner(System.in);
         int a = obj.nextInt();
         int b = obj.nextInt();
-        for (int i = a; i <= b; i++) {
-            if (i % 2 = 0)
-
+        for (int i = a + 1; i <= b - 1; i++) {
+            if (i % 2 == 0)
+                System.out.println(i);
+        }
         }
 }
