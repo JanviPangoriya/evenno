@@ -10,13 +10,14 @@ public class Main {
     public static void main(String[] args) {
         Scanner obj = new Scanner(System.in);
         int a = obj.nextInt();
-        int r, s = 0;
-        while (a != 0) {
-            r = a % 10;
-            s = s + r;
-            a = a / 10;
+        int c = 0;
+        for (int i = 1; i <= a; i++) {
+            if (a % i == 0)
+                c = c + 1;
         }
-        System.out.println(s);
-
+        if (c == 2)
+            System.out.println(a + " is a prime number.");
+        else
+            System.out.println((a + " is not a prime number."));
     }
 }
